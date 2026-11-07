@@ -1,27 +1,23 @@
 # Visitors Prep
 
-Family checklist for getting the house ready for visitors, installable on Android and iPhone.
+Installable family checklist, hosted at https://tarasenior94.github.io/Visitor-Task-List/
 
-## Put it on GitHub Pages
+## Uploading
 
-1. Create a new repository on github.com (for example `visitors-prep`).
-2. Click **Add file → Upload files** and drag in everything from this folder,
-   including the `icons` folder and the `.nojekyll` file. Click **Commit changes**.
-3. Go to **Settings → Pages**. Under **Branch**, choose `main` and `/ (root)`, then **Save**.
-4. After a minute or two the address appears at the top of that page,
-   e.g. `https://yourname.github.io/visitors-prep/`.
+All files sit side by side in the root of the repository. There are no folders.
 
-## Install on a phone
+1. In the repository, delete the old `icons` folder, `.nojekyll`, and any old copies of these files.
+2. Click **Add file → Upload files**, select every file from this zip, and click **Commit changes**.
+3. Wait a minute or two for GitHub Pages to update.
 
-- **iPhone:** open the link in **Safari**, tap **Share**, then **Add to Home Screen**.
-- **Android:** open the link in **Chrome**, tap **⋮**, then **Install app** (or **Add to Home screen**).
+## Installing
 
-## Sharing the list with the family
+- **Android:** open the link in Chrome, tap **⋮**, then **Install app**.
+- **iPhone:** open the link in Safari, tap **Share**, then **Add to Home Screen**.
 
-Until `config.js` has your Supabase details, the app is in preview mode and each phone keeps its own ticks.
-Add the Supabase Project URL and publishable key to `config.js` to share one list between everyone.
+## Important
 
-## Updating the app later
+The paths in `manifest.json`, `sw.js` and `index.html` use `/Visitor-Task-List/`.
+If the repository is renamed, change that text in all three files.
 
-After uploading changed files, open `sw.js` and change `visitors-prep-v1` to `visitors-prep-v2` (and so on).
-That tells phones to fetch the new version.
+When you upload changes later, change `visitors-prep-v2` in `sw.js` to the next number.

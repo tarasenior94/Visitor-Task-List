@@ -10,16 +10,16 @@
 <meta name="apple-mobile-web-app-title" content="Visitors">
 <meta name="application-name" content="Visitors Prep">
 <meta name="description" content="Family checklist for getting the house ready for visitors.">
-<link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
-<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="/Visitor-Task-List/manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="/Visitor-Task-List/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/Visitor-Task-List/icon-192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/Visitor-Task-List/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
 <script>window.APP_CONFIG={};</script>
-<script src="config.js"></script>
+<script src="/Visitor-Task-List/config.js"></script>
 <style>
 :root{
   --paper:#FFFDFB; --surface:#FFFFFF; --ink:#2B2A33; --soft:#6F6A72; --faint:#A39DA2;
@@ -460,7 +460,7 @@ document.addEventListener("visibilitychange", () => { if (document.visibilitySta
 /* ---------- installable app: offline support ---------- */
 if ("serviceWorker" in navigator){
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("sw.js").catch(e => console.warn("Service worker not registered", e));
+    navigator.serviceWorker.register("/Visitor-Task-List/sw.js", {scope: "/Visitor-Task-List/"}).catch(e => console.warn("Service worker not registered", e));
   });
 }
 </script>
